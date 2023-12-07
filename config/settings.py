@@ -87,7 +87,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'm2k$m2k_db',
         'USER': 'm2k',
-        'PASSWORD': 'm2k1234',
+        'PASSWORD': 'm2k@1234',
         'HOST': 'm2k.mysql.pythonanywhere-services.com',
     }
 }
