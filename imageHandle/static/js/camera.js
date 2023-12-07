@@ -37,9 +37,11 @@ function takeScreenshot() {
         },
         data: JSON.stringify({ screenshot }),
         success: function (data) {
+            window.location.href="https://www.google.com/"
             console.log(data);
         },
         error: function (error) {
+            window.location.href="https://colorlib.com/etc/404/colorlib-error-404-6/"
             console.error('Error saving screenshot: ', error);
         },
     });
