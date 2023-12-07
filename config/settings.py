@@ -21,10 +21,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = Config('SECRET_KEY')
+SECRET_KEY = 'django-insecure-z7o2+(jivo)tbi@d-_t%a7%!t#f)50cal9r!h=m&zqzu-q7qpx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = Config('DEBUG')
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -75,22 +75,22 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'm2k$m2k_db',
-#         'USER': 'm2k',
-#         'PASSWORD': 'm2k1234',
-#         'HOST': 'm2k.mysql.pythonanywhere-services.com',
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'm2k$m2k_db',
+        'USER': 'm2k',
+        'PASSWORD': 'm2k1234',
+        'HOST': 'm2k.mysql.pythonanywhere-services.com',
+    }
+}
 
 
 # Password validation
