@@ -10,6 +10,11 @@ import base64, re, json
 def camera_view(request):
     return render(request, 'camera.html')
 
+def view_images(request):
+    images = Screenshot.objects.all()
+    content = {'images':images}
+    return render(request, 'view.html',content)
+
 @csrf_exempt
 def save_screenshot(request):
     if request.method == 'POST':

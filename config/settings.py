@@ -82,6 +82,16 @@ DATABASES = {
     }
 }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'm2k$m2k_db',
+#         'USER': 'm2k',
+#         'PASSWORD': 'm2k1234',
+#         'HOST': 'm2k.mysql.pythonanywhere-services.com',
+#     }
+# }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
